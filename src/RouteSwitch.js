@@ -4,6 +4,7 @@ import Items from "./Items";
 import Cart from "./Cart";
 import Header from "./Header";
 import { useState  } from "react";
+import './style.css';
 
 
 const RouteSwitch = () => {

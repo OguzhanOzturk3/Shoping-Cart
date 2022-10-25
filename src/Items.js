@@ -20,9 +20,9 @@ const Items = (cart) => {
     }
    
     return (
-      <div>
+      <div className='main'>
         
-        <h1>Hello from Items</h1>
+      
 
       <ListItem iData={itemData} getId={getId} />
        

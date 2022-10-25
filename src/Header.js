@@ -1,5 +1,6 @@
 import {  useEffect  } from "react";
-
+import { Link,useParams } from 'react-router-dom'
+import bag from './img/bag.png'
 const Header=(props)=>{
 
     const {cart}=props;
@@ -14,9 +15,29 @@ const Header=(props)=>{
  
    
     return(
-        <div>
-            <h2>This is Header.</h2>
-            <p>{i} Items in cart</p>
+        <div id='header'>
+            <div>
+            <h1>MOVIE SHOP</h1>
+            </div>
+
+            <div className="header-cart">
+
+
+         <div>
+         <Link style={{ textDecoration: 'none' , color:'white'}} to="/">Products</Link>
+            </div>     
+
+            <Link style={{ textDecoration: 'none' , color:'white'}} to="/cart">
+          <div className="bag">
+          <img src={bag}></img>
+          <p>{i}</p>
+         
+           </div>
+
+           </Link>
+            </div>
+            
+           
         </div>
     )
 }
